@@ -40,6 +40,7 @@ RUN set -xe \
 				   lxml \
 				   pymongo \
 				   scrapy-redis-bloomfilter \
+				   PyMySQL \
     && curl -sSL https://github.com/scrapy/scrapy/raw/master/extras/scrapy_bash_completion -o /etc/bash_completion.d/scrapy_bash_completion \
     && echo 'source /etc/bash_completion.d/scrapy_bash_completion' >> /root/.bashrc \
     && apt-get purge -y --auto-remove autoconf \
